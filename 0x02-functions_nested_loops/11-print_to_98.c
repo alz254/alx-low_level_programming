@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - print natural numbers to 98.
- * int n - natural numbers
+ * @n: The number to begin counting at.
  * Return: Always 0.
  */
 
