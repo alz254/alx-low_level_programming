@@ -1,18 +1,22 @@
 #include "main.h"
 
 /**
- * main - debugging example
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always returns 0
+ *
  */
 int main(void)
 {
-	char *_putchar = "_putchar";
-
-	while (*_putchar)
-	{
-		_putchar(*_putchar);
-		_putchar++;
-	}
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
 	_putchar('\n');
 	return (0);
 }
