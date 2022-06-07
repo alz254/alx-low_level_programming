@@ -1,4 +1,4 @@
-#include "coding.h"
+#include "main.h"
 
 /**
  * print_times_table - function with int type single argument
