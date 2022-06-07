@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_times_table - function with int type single argument
+ * print _times_table - function with int type single argument
  * @n: int type single argument
  *
  * Description: if/else and nested loop to print multiple table
  * Return: 0
  */
-void print_times_table(int n)
+void print _times_table(int n)
 {
 	int i, j, result;
 
