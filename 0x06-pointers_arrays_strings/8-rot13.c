@@ -1,26 +1,28 @@
 #include "main.h"
 /**
- * *rot13 - encodes a string using rot13.
- *
- * @str: string.
- * Return: string.
+ * rot13 - encrypts code
+ * @s: string to encrypt
+ * Return: char value
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	int i;
+	char part1[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char part2[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
-	for (i = 0; str[i] != '\0'; i++)
+	int i;
+	int j = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((*(str + i) >= 'a' && *(str + i) < 'n')
-				|| (*(str + i) >= 'A' && *(str + i) < 'N'))
+
+		for (j = 0; part1[j] != '\0'; j++)
 		{
-			*(str + i) += 13;
-		}
-		else if ((*(str + i) >= 'n' && *(str + i) <= 'z')
-				|| (*(str + i) >= 'N' && *(str + i) <= 'Z'))
-		{
-			*(str + i) -= 13;
+			if (s[i] == part1[j])
+			{
+				s[i] = part2[j];
+				break;
+			}
 		}
 	}
-	return (str);
+	return (s);
 }
