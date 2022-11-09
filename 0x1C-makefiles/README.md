@@ -1,4 +1,4 @@
-# 0x1B.c
+# 0x1C. C - Makefiles
 In this project folder, I have learnt about:
 
 -    What are make, Makefiles
